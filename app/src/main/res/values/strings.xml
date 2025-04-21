@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IpTest</string>
+    <string name="cant_parse_result">Can\'t parse the request result</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="unknown_error">Unknown error: %1$s</string>
+    <string name="server_error">Server error %1$d: %2$s</string>
+    <string name="reload">Reload IP</string>
+</resources>
