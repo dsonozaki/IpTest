@@ -1,7 +1,6 @@
 package com.sonozaki.iptest.core.network
 
 import com.google.gson.JsonParseException
-import com.google.gson.JsonSyntaxException
 import com.google.gson.stream.MalformedJsonException
 import com.sonozaki.iptest.R
 import com.sonozaki.iptest.core.ui.UIText
@@ -10,6 +9,9 @@ import com.sonozaki.iptest.domain.entitities.RequestResult
 import retrofit2.HttpException
 import java.io.IOException
 
+/**
+ * Function for mapping network request results into [RequestResult]
+ */
 suspend fun <T, S> safeApiCallWithMapper(
     mapper: Mapper<T, S>,
     apiCall: suspend () -> T

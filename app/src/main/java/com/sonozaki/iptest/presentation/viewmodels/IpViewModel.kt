@@ -20,6 +20,7 @@ class IpViewModel @Inject constructor(
     private val refreshIpResultUseCase: RefreshIpResultUseCase
 ): ViewModel() {
 
+    //load IP when ViewModel is created
     init {
         refreshIpResult()
     }
